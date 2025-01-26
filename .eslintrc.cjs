@@ -30,7 +30,7 @@ module.exports = {
         'patterns': ['@mui/*/*/*']
       }
     ],
-    
+
     //Common
     'no-console': 1,
     'no-lonely-if': 1,
