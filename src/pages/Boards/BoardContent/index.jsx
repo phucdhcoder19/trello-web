@@ -14,3 +14,4 @@ function BoardContent() {
 }
 
 export default BoardContent
+
