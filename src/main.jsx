@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </CssVarsProvider>
     <CssVarsProvider theme={theme}>
       <CssBaseline />
-      <main>This app is using the dark mode</main>
     </CssVarsProvider>
   </React.StrictMode>
 )
