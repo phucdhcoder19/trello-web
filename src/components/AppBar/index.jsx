@@ -1,16 +1,59 @@
 import Box from '@mui/material/Box'
 import ModeSelect from '~/components/ModeSelect'
+import AppsIcon from '@mui/icons-material/Apps'
+import { ReactComponent as TrelloIcon } from '~/assets/trello.svg'
+import SvgIcon from '@mui/material/SvgIcon'
+import Typography from '@mui/material/Typography'
+import Workspaces from './Menus/Workspaces'
+import Recent from './Menus/Recent'
+import Starred from './Menus/Starred'
+import Templates from './Menus/Templates'
+import { Badge, Button, Tooltip } from '@mui/material'
+import SearchAppBar from './Menus/SearchFiled'
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
+import Profiles from './Menus/Profiles'
 function AppBar() {
   return (
-    <Box sx={{
-      backgroundColor: 'primary.light',
+    <Box px={1} sx={{
       width: '100%',
       height: (theme) => theme.trello.appBarHeight,
       display: 'flex',
-      alignItems: 'center'
+      alignItems: 'center',
+      justifyContent: 'space-between'
     }}>
-      <ModeSelect />
-    </Box>
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+        <AppsIcon sx={{ color: 'primary.main' }}></AppsIcon>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+          <SvgIcon component={TrelloIcon} inheritViewBox sx={{ color: 'primary.main' }} />
+          <Typography component='span' variant='body1' sx={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'primary.main' }}>
+            Trello</Typography>
+        </Box>
+        <Workspaces />
+        <Recent />
+        <Starred />
+        <Templates />
+        <Button variant="outlined">Create</Button>
+      </Box>
+
+
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+        <SearchAppBar />
+        <ModeSelect />
+        <Tooltip title="Notification">
+          <Badge badgeContent={4} color="secondary" sx={{ cursor: 'pointer' }}>
+            <NotificationsNoneIcon color="action" />
+          </Badge>
+        </Tooltip>
+
+        <Tooltip title="Help">
+          <HelpOutlineIcon sx={{ cursor: 'pointer' }} />
+        </Tooltip>
+
+        <Profiles/>
+      </Box>
+
+    </Box >
   )
 }
 
