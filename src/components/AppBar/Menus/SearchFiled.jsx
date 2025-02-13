@@ -1,8 +1,22 @@
-import { styled } from '@mui/material/styles'
+import { alpha, styled } from '@mui/material/styles'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import InputBase from '@mui/material/InputBase'
 import SearchIcon from '@mui/icons-material/Search'
+
+// const theme = theme({
+//   components: {
+//     MuiInputBase: {
+//       styleOverrides: {
+//         // Override the input text color
+//         input: ({ theme }) => ({
+//           color: theme.palette.primary.main, // Changes the input text color to primary color
+//         })
+//       }
+//     }
+//   }
+// })
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -26,7 +40,7 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 }))
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
+  color:  '#00bcd4',
   width: '100%',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
