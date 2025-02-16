@@ -25,7 +25,7 @@ function Profiles() {
           aria-expanded={open ? 'true' : undefined}
         >
           <Avatar
-            sx={{ width: 34, height: 34 }}
+            sx={{ width: 36, height: 36 }}
             alt='HoangPhucdev'
             src='https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-1/471128245_1255866359034132_3129553351074727496_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=j3mhJp0JlR0Q7kNvgFANUE_&_nc_oc=AdiILnhyI2mdEzPKLp592vrdDhR_55gFFDcUIerqod6yoGjeTgOZjRsclz-XIiZpPlE&_nc_zt=24&_nc_ht=scontent.fsgn2-5.fna&_nc_gid=ArAG1Rt_7kXsXyKd9FHHUGw&oh=00_AYAvd9rQ6UryfhRb1EkBNy7Y0ypC34gqfyTpWwvwnfPVUA&oe=67AE43B2'
           >
